@@ -1,6 +1,4 @@
-# Instalando ESLINT versão: 8.57.0
-
-npm install eslint@8.57.0 --save-dev
+# Instalando ESLINT
 
 npm init @eslint/config
 
