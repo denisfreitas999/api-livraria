@@ -10,7 +10,9 @@ const livroSchema = new mongoose.Schema({
     required: true
   },
   editora: {
-    type: String
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'editoras',
+    required: true
   },
   preco: {
     type: Number,
