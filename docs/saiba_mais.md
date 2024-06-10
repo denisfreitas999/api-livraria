@@ -8,3 +8,7 @@ npm init @eslint/config
 # Instalando o Nodemon
 
 npm install nodemon
+
+# Instalando o express
+
+npm install express
