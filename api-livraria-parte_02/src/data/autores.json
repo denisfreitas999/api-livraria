@@ -1,0 +1,42 @@
+[
+  {
+    "nome": "J.K. Rowling",
+    "nacionalidade": "Britânica"
+  },
+  {
+    "nome": "Gabriel García Márquez",
+    "nacionalidade": "Colombiano"
+  },
+  {
+    "nome": "Chimamanda Ngozi Adichie",
+    "nacionalidade": "Nigeriana"
+  },
+  {
+    "nome": "Haruki Murakami",
+    "nacionalidade": "Japonês"
+  },
+  {
+    "nome": "George Orwell",
+    "nacionalidade": "Britânico"
+  },
+  {
+    "nome": "Isabel Allende",
+    "nacionalidade": "Chilena"
+  },
+  {
+    "nome": "Toni Morrison",
+    "nacionalidade": "Americana"
+  },
+  {
+    "nome": "Yuval Noah Harari",
+    "nacionalidade": "Israelense"
+  },
+  {
+    "nome": "Jane Austen",
+    "nacionalidade": "Britânica"
+  },
+  {
+    "nome": "Leo Tolstoy",
+    "nacionalidade": "Russo"
+  }
+]

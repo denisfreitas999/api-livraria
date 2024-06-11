@@ -1,0 +1,142 @@
+[
+  {
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "autor": "66686c4ef139a3361db2b2ac",
+    "editora": "Casa do código",
+    "numeroPaginas": 309,
+    "numeroCapitulos": 17
+  },
+  {
+    "titulo": "Harry Potter e a Câmara Secreta",
+    "autor": "66686c4ef139a3361db2b2ac",
+    "editora": "Alura",
+    "numeroPaginas": 341,
+    "numeroCapitulos": 18
+  },
+  {
+    "titulo": "Cem Anos de Solidão",
+    "autor": "66686c59f139a3361db2b2ae",
+    "editora": "Casa do código",
+    "numeroPaginas": 417,
+    "numeroCapitulos": 20
+  },
+  {
+    "titulo": "O Amor nos Tempos do Cólera",
+    "autor": "66686c59f139a3361db2b2ae",
+    "editora": "Alura",
+    "numeroPaginas": 368,
+    "numeroCapitulos": 14
+  },
+  {
+    "titulo": "Americanah",
+    "autor": "66686c61f139a3361db2b2b0",
+    "editora": "Casa do código",
+    "numeroPaginas": 588,
+    "numeroCapitulos": 55
+  },
+  {
+    "titulo": "Meio Sol Amarelo",
+    "autor": "66686c61f139a3361db2b2b0",
+    "editora": "Alura",
+    "numeroPaginas": 433,
+    "numeroCapitulos": 37
+  },
+  {
+    "titulo": "Kafka à Beira-Mar",
+    "autor": "66686c68f139a3361db2b2b2",
+    "editora": "Casa do código",
+    "numeroPaginas": 505,
+    "numeroCapitulos": 49
+  },
+  {
+    "titulo": "Norwegian Wood",
+    "autor": "66686c68f139a3361db2b2b2",
+    "editora": "Alura",
+    "numeroPaginas": 296,
+    "numeroCapitulos": 11
+  },
+  {
+    "titulo": "1984",
+    "autor": "66686c6ff139a3361db2b2b4",
+    "editora": "Casa do código",
+    "numeroPaginas": 328,
+    "numeroCapitulos": 24
+  },
+  {
+    "titulo": "A Revolução dos Bichos",
+    "autor": "66686c6ff139a3361db2b2b4",
+    "editora": "Alura",
+    "numeroPaginas": 112,
+    "numeroCapitulos": 10
+  },
+  {
+    "titulo": "A Casa dos Espíritos",
+    "autor": "66686c76f139a3361db2b2b6",
+    "editora": "Casa do código",
+    "numeroPaginas": 433,
+    "numeroCapitulos": 14
+  },
+  {
+    "titulo": "Paula",
+    "autor": "66686c76f139a3361db2b2b6",
+    "editora": "Alura",
+    "numeroPaginas": 368,
+    "numeroCapitulos": 20
+  },
+  {
+    "titulo": "Amada",
+    "autor": "66686c7cf139a3361db2b2b8",
+    "editora": "Casa do código",
+    "numeroPaginas": 324,
+    "numeroCapitulos": 28
+  },
+  {
+    "titulo": "Canção de Solomon",
+    "autor": "66686c7cf139a3361db2b2b8",
+    "editora": "Alura",
+    "numeroPaginas": 337,
+    "numeroCapitulos": 15
+  },
+  {
+    "titulo": "Sapiens: Uma Breve História da Humanidade",
+    "autor": "66686c84f139a3361db2b2ba",
+    "editora": "Casa do código",
+    "numeroPaginas": 443,
+    "numeroCapitulos": 20
+  },
+  {
+    "titulo": "Homo Deus: Uma Breve História do Amanhã",
+    "autor": "66686c84f139a3361db2b2ba",
+    "editora": "Alura",
+    "numeroPaginas": 450,
+    "numeroCapitulos": 21
+  },
+  {
+    "titulo": "Orgulho e Preconceito",
+    "autor": "66686c8cf139a3361db2b2bc",
+    "editora": "Casa do código",
+    "numeroPaginas": 279,
+    "numeroCapitulos": 61
+  },
+  {
+    "titulo": "Emma",
+    "autor": "66686c8cf139a3361db2b2bc",
+    "editora": "Alura",
+    "numeroPaginas": 474,
+    "numeroCapitulos": 55
+  },
+  {
+    "titulo": "Guerra e Paz",
+    "autor": "66686c92f139a3361db2b2be",
+    "editora": "Casa do código",
+    "numeroPaginas": 1225,
+    "numeroCapitulos": 365
+  },
+  {
+    "titulo": "Anna Karenina",
+    "autor": "66686c92f139a3361db2b2be",
+    "editora": "Alura",
+    "numeroPaginas": 864,
+    "numeroCapitulos": 239
+  }
+]
