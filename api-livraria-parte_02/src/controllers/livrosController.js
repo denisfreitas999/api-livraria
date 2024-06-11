@@ -87,6 +87,28 @@ class LivroController {
       next(erro);
     }
   };
+
+  static listarLivroPorFiltro = async (req, res, next) => {
+    try {
+      const { editora, titulo } = req.query;
+
+      const busca = {};
+
+      if (editora) {
+        busca.editora = editora;
+      }
+
+      if (titulo) {
+        busca.titulo = titulo;
+      }
+
+      const livrosResultado = await LivroModel.find(busca);
+
+      res.status(200).send(livrosResultado);
+    } catch (erro) {
+      next(erro);
+    }
+  };
 }
 
 export default LivroController;

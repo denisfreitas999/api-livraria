@@ -7,7 +7,7 @@ import NaoEncontrado from "../errors/NaoEncontrado.js";
 // eslint-disable-next-line no-unused-vars
 export default function manipuladorDeErros(erro, req, res, next) {
 
-  console.log(erro);
+  /* console.log(erro); */
 
   if (erro instanceof mongoose.Error.CastError) {
     new RequisicaoIncorreta(erro).enviarResposta(res);
