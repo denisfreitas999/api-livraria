@@ -38,7 +38,7 @@ class LivroController {
 
       const livroResultado = await livro.save();
 
-      res.status(201).json({ msg: "Livro Cadastrado com sucesso.", livroResultado });
+      res.status(201).json({ message: "Livro Cadastrado com sucesso.", livroResultado });
     } catch (erro) {
       next(erro);
     }

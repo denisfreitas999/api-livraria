@@ -20,7 +20,7 @@ class AutorController {
       const id = req.params.id;
 
       if (id === null || id === undefined) {
-        res.status(400).json({ msg: "Parâmetros não definidos." });
+        res.status(400).json({ message: "Parâmetros não definidos." });
       }
 
       const autorResultado = await AutorModel.findById(id);
