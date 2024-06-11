@@ -17,10 +17,7 @@ class LivroController {
     try {
       const id = req.params.id;
 
-      const livroResultado = await LivroModel.findById(id)
-        .populate("autor", "nome")
-        .exec();
-
+      const livroResultado = await LivroModel.findById(id, {}, { autopopulate: false });
       if (livroResultado !== null) {
         res.status(200).send(livroResultado);
       } else {
@@ -92,9 +89,7 @@ class LivroController {
       const busca = await processaBusca(req.query);
 
       if (busca !== null) {
-        const livrosResultado = LivroModel
-          .find(busca)
-          .populate("autor");
+        const livrosResultado = await LivroModel.find(busca);
         req.resultado = livrosResultado;
         next();
       } else {
