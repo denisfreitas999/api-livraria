@@ -1,10 +1,10 @@
-import livros from "../models/Livro.js";
+import LivroModel from "../models/Livro.js";
 
 class LivroController {
 
   static listarLivros = async (req, res, next) => {
     try {
-      const livrosResultado = await livros.find()
+      const livrosResultado = await LivroModel.find()
         .populate("autor")
         .exec();
 
@@ -18,7 +18,7 @@ class LivroController {
     try {
       const id = req.params.id;
 
-      const livroResultado = await livros.findById(id)
+      const livroResultado = await LivroModel.findById(id)
         .populate("autor", "nome")
         .exec();
 
@@ -34,11 +34,11 @@ class LivroController {
 
   static cadastrarLivro = async (req, res, next) => {
     try {
-      let livro = new livros(req.body);
+      let livro = new LivroModel(req.body);
 
       const livroResultado = await livro.save();
 
-      res.status(201).send(livroResultado.toJSON());
+      res.status(201).json({ msg: "Livro Cadastrado com sucesso.", livroResultado });
     } catch (erro) {
       next(erro);
     }
@@ -48,7 +48,7 @@ class LivroController {
     try {
       const id = req.params.id;
 
-      const livroResultado = await livros.findByIdAndUpdate(id, { $set: req.body });
+      const livroResultado = await LivroModel.findByIdAndUpdate(id, { $set: req.body });
 
       if (livroResultado !== null) {
         res.status(200).send({ message: "Livro atualizado com sucesso" });
@@ -64,7 +64,7 @@ class LivroController {
     try {
       const id = req.params.id;
 
-      const livroResultado = await livros.findByIdAndDelete(id);
+      const livroResultado = await LivroModel.findByIdAndDelete(id);
 
       if (livroResultado !== null) {
         res.status(200).send({ message: "Livro removido com sucesso" });
@@ -80,7 +80,7 @@ class LivroController {
     try {
       const editora = req.query.editora;
 
-      const livrosResultado = await livros.find({ "editora": editora });
+      const livrosResultado = await LivroModel.find({ "editora": editora });
 
       res.status(200).send(livrosResultado);
     } catch (erro) {

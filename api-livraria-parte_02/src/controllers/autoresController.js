@@ -1,11 +1,11 @@
 import NaoEncontrado from "../errors/NaoEncontrado.js";
-import autores from "../models/Autor.js";
+import AutorModel from "../models/Autor.js";
 
 class AutorController {
 
   static listarAutores = async (req, res, next) => {
     try {
-      const autoresResultado = await autores.find();
+      const autoresResultado = await AutorModel.find();
 
       res.status(200).json(autoresResultado);
 
@@ -23,7 +23,7 @@ class AutorController {
         res.status(400).json({ msg: "Parâmetros não definidos." });
       }
 
-      const autorResultado = await autores.findById(id);
+      const autorResultado = await AutorModel.findById(id);
 
       if (autorResultado === null) {
         next(new NaoEncontrado("Id do autor não localizado."));
@@ -38,7 +38,7 @@ class AutorController {
 
   static cadastrarAutor = async (req, res, next) => {
     try {
-      let autor = new autores(req.body);
+      let autor = new AutorModel(req.body);
 
       const autorResultado = await autor.save();
 
@@ -53,7 +53,7 @@ class AutorController {
     try {
       const id = req.params.id;
 
-      const autorResultado = await autores.findByIdAndUpdate(id, { $set: req.body });
+      const autorResultado = await AutorModel.findByIdAndUpdate(id, { $set: req.body });
 
       if (autorResultado !== null) {
         res.status(200).send({ message: "Autor atualizado com sucesso" });
@@ -70,7 +70,7 @@ class AutorController {
     try {
       const id = req.params.id;
 
-      const autorResultado = await autores.findByIdAndDelete(id);
+      const autorResultado = await AutorModel.findByIdAndDelete(id);
 
       if (autorResultado !== null) {
         res.status(200).send({ message: "Autor removido com sucesso" });
@@ -81,8 +81,6 @@ class AutorController {
       next(erro);
     }
   };
-
-
 }
 
 export default AutorController;

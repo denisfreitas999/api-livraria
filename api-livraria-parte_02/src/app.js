@@ -1,7 +1,7 @@
 import "dotenv/config";
 import express from "express";
 import conectaNoDatabase from "./config/dbConnect.js";
-import routes from "./routes/index.js";
+import routes from "./routes/router.js";
 import manipuladorDeErros from "./middlewares/manipuladorDeErros.js";
 import manipulador404 from "./middlewares/manipulador404.js";
 
